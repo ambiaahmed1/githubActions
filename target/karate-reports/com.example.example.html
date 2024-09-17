@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"c11109a9-3815-49b3-b3dc-053f0a39649b",karate_version:"1.4.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>com.example.example</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2024-09-17 12:53:58 AM</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:3]"><span>[1:3]</span> <span>Example scenario</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">com/example/example.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Example Feature</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:3]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:3]</span>
+                <span class="scenario-name">Example scenario</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>824</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref passed">4</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://jsonplaceholder.typicode.com&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">61</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref passed">5</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">700</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">00:53:57.749 request:
+1 &gt; GET https://jsonplaceholder.typicode.com
+1 &gt; Host: jsonplaceholder.typicode.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/16)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+00:53:58.109 response time in milliseconds: 360
+1 &lt; 200
+1 &lt; Date: Tue, 17 Sep 2024 04:53:58 GMT
+1 &lt; Content-Type: text/html; charset=UTF-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1726467242&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=rDY5TJjCUxnlo8ul0Xzfnr%2FACVO6Yxyk4ZysNbeZZz0%3D&quot;}]}
+1 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1726467242&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=rDY5TJjCUxnlo8ul0Xzfnr%2FACVO6Yxyk4ZysNbeZZz0%3D
+1 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+1 &lt; X-Powered-By: Express
+1 &lt; X-Ratelimit-Limit: 1000
+1 &lt; X-Ratelimit-Remaining: 999
+1 &lt; X-Ratelimit-Reset: 1726467265
+1 &lt; Vary: Origin, Accept-Encoding
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Cache-Control: public, max-age=43200
+1 &lt; Last-Modified: Mon, 16 Sep 2024 01:58:19 GMT
+1 &lt; Via: 1.1 vegur
+1 &lt; CF-Cache-Status: HIT
+1 &lt; Age: 23993
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 8c467edded6742ad-EWR
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;utf-8&quot; /&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1, shrink-to-fit=no&quot; /&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;/style.css&quot; /&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.9.0/prism-lucario.min.css&quot; /&gt;
+&lt;title&gt;JSONPlaceholder - Free Fake REST API&lt;/title&gt;
+
+&lt;script async src=&quot;https://www.googletagmanager.com/gtag/js?id=G-E3C3GCQVBN&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag(&#39;js&#39;, new Date())
+
+      gtag(&#39;config&#39;, &#39;G-E3C3GCQVBN&#39;)
+    &lt;/script&gt;
+&lt;script async src=&quot;https://media.ethicalads.io/media/client/ethicalads.min.js&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;div class=&quot;bg-blue-500 text-center py-2&quot;&gt;
+&lt;div class=&quot;container mx-auto&quot;&gt;
+&lt;a href=&quot;https://github.com/typicode/mistcss&quot; class=&quot;text-white&quot;&gt;Check my new project &lt;strong&gt;💧 MistCSS&lt;/strong&gt; write React components with 50% less code&lt;/a&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;header class=&quot;
+        container
+        mx-auto
+        max-w-4xl
+        flex flex-col
+        md:flex-row
+        justify-between
+        py-one
+        mb-three
+      &quot;&gt;
+&lt;h1&gt;
+&lt;a href=&quot;/&quot; class=&quot;font-bold no-underline&quot;&gt;JSONPlaceholder&lt;/a&gt;
+&lt;/h1&gt;
+&lt;nav&gt;
+&lt;ul class=&quot;flex&quot;&gt;
+&lt;li&gt;&lt;a href=&quot;/guide&quot; class=&quot;mr-4 no-underline&quot;&gt;Guide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://github.com/sponsors/typicode&quot; class=&quot;mr-4 no-underline&quot;&gt;Sponsor this project&lt;/a
+            &gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://blog.typicode.com&quot; class=&quot;mr-4 no-underline&quot;&gt;Blog&lt;/a
+            &gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://my-json-server.typicode.com&quot; class=&quot;no-underline&quot;&gt;My JSON Server&lt;/a
+            &gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/nav&gt;
+&lt;/header&gt;
+&lt;div&gt;
+
+&lt;section id=&quot;hero&quot; class=&quot;-mt-three py-20 mb-six -mx-2&quot;&gt;
+&lt;div class=&quot;container mx-auto max-w-4xl&quot;&gt;
+&lt;span class=&quot;text-6xl bold&quot;&gt;{JSON} Placeholder&lt;/span&gt;
+&lt;h1 class=&quot;mt-two text-lg&quot;&gt;
+Free fake and reliable API for testing and prototyping.
+&lt;/h1&gt;
+&lt;p class=&quot;mb-one text-lg&quot;&gt;
+Powered by
+&lt;a href=&quot;https://github.com/typicode/json-server&quot;&gt;JSON Server&lt;/a&gt;
++
+&lt;a href=&quot;https://github.com/typicode/lowdb&quot;&gt;LowDB&lt;/a&gt;.
+&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Serving ~3 billion requests each month&lt;/b&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+
+&lt;section class=&quot;container mx-auto max-w-4xl mb-six&quot;&gt;
+&lt;h2 class=&quot;text-2xl mb-one&quot;&gt;Sponsors&lt;/h2&gt;
+&lt;p class=&quot;mb-two&quot;&gt;
+JSONPlaceholder is supported by the following companies and
+&lt;a href=&quot;https://github.com/sponsors/typicode&quot;&gt;Sponsors&lt;/a&gt; on GitHub, check
+them out 💖
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&quot;https://mockend.com&quot; target=&quot;_blank&quot;&gt;
+&lt;img src=&quot;mockend.svg&quot; class=&quot;mb-two&quot; style=&quot;height: 100px&quot; /&gt;
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&quot;https://zuplo.link/json-server-web&quot; target=&quot;_blank&quot;&gt;
+&lt;img src=&quot;https://github.com/typicode/json-server/assets/5502029/928b7526-0fdf-46ae-80d9-27fa0ef5f430&quot; class=&quot;mb-two&quot; style=&quot;height: 100px&quot; /&gt;
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;p class=&quot;my-two&quot;&gt;
+&lt;a href=&quot;https://github.com/sponsors/typicode&quot;&gt;Your company logo here&lt;/a&gt;
+&lt;/p&gt;
+&lt;/section&gt;
+
+&lt;section class=&quot;container mx-auto max-w-4xl mb-four&quot;&gt;
+&lt;h2 class=&quot;text-2xl mb-one&quot;&gt;Try it&lt;/h2&gt;
+&lt;p&gt;Run this code here, in a console or from any site:&lt;/p&gt;
+&lt;pre&gt;&lt;code id=&quot;example&quot; class=&quot;language-javascript&quot;&gt;fetch(&#39;https://jsonplaceholder.typicode.com/todos/1&#39;)
+      .then(response =&gt; response.json())
+      .then(json =&gt; console.log(json))&lt;/code&gt;&lt;/pre&gt;
+&lt;button id=&quot;run-button&quot; class=&quot;
+      bg-black
+      hover:bg-gray-700
+      text-white
+      font-bold
+      py-quarter
+      my-quarter
+      px-4
+      rounded
+    &quot;&gt;
+Run script
+&lt;/button&gt;
+&lt;pre&gt;&lt;code id=&quot;result&quot; class=&quot;language-javascript&quot;&gt;{}&lt;/code&gt;&lt;/pre&gt;
+&lt;p id=&quot;run-message&quot; class=&quot;invisible&quot;&gt;
+Congrats! You&#39;ve made your first call to JSONPlaceholder. 😃 🎉
+&lt;/p&gt;
+&lt;div class=&quot;horizontal flat adaptive&quot; data-ea-publisher=&quot;jsonplaceholdertypicodecom&quot; data-ea-style=&quot;stickybox&quot; data-ea-keywords=&quot;javascript|typescript|mobile|react|vue|frontend|front-end|backend|back-end&quot;&gt;&lt;/div&gt;
+&lt;/section&gt;
+&lt;main class=&quot;container mx-auto max-w-4xl&quot;&gt;&lt;h2&gt;When to use&lt;/h2&gt;
+&lt;p&gt;JSONPlaceholder is a free online REST API that you can use &lt;strong&gt;whenever you need some fake data&lt;/strong&gt;. It can be in a README on GitHub, for a demo on CodeSandbox, in code examples on Stack Overflow, ...or simply to test things locally.&lt;/p&gt;
+&lt;h2&gt;Resources&lt;/h2&gt;
+&lt;p&gt;JSONPlaceholder comes with a set of 6 common resources:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&quot;/posts&quot;&gt;/posts&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;100 posts&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&quot;/comments&quot;&gt;/comments&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;500 comments&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&quot;/albums&quot;&gt;/albums&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;100 albums&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&quot;/photos&quot;&gt;/photos&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;5000 photos&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&quot;/todos&quot;&gt;/todos&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;200 todos&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&quot;/users&quot;&gt;/users&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;10 users&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: resources have relations. For example: posts have many comments, albums have many photos, ... see &lt;a href=&quot;/guide&quot;&gt;guide&lt;/a&gt; for the full list.&lt;/p&gt;
+&lt;h2&gt;Routes&lt;/h2&gt;
+&lt;p&gt;All HTTP methods are supported. You can use http or https for your requests.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;/posts&quot;&gt;/posts&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;/posts/1&quot;&gt;/posts/1&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;/posts/1/comments&quot;&gt;/posts/1/comments&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;/comments?postId=1&quot;&gt;/comments?postId=1&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;POST&lt;/td&gt;
+&lt;td&gt;/posts&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;PUT&lt;/td&gt;
+&lt;td&gt;/posts/1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;PATCH&lt;/td&gt;
+&lt;td&gt;/posts/1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;DELETE&lt;/td&gt;
+&lt;td&gt;/posts/1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: see &lt;a href=&quot;/guide&quot;&gt;guide&lt;/a&gt; for usage examples.&lt;/p&gt;
+&lt;h2&gt;Use your own data&lt;/h2&gt;
+&lt;p&gt;With our sponsor &lt;a href=&quot;https://mockend.com&quot;&gt;Mockend&lt;/a&gt; and a simple GitHub repo, you can have your own fake online REST server in seconds.&lt;/p&gt;
+&lt;/main&gt;
+&lt;script&gt;
+  // Use http or https based on location.protocol
+  var example = document.getElementById(&#39;example&#39;)
+  example.textContent = example.textContent.replace(&#39;http:&#39;, location.protocol)
+
+  // Highlight result element
+  var result = document.getElementById(&#39;result&#39;)
+
+  // Run example
+  var runButton = document.getElementById(&#39;run-button&#39;)
+  runButton.onclick = function () {
+    var root = location.protocol + &#39;//jsonplaceholder.typicode.com&#39;
+    var runMessage = document.getElementById(&#39;run-message&#39;)
+
+    fetch(&#39;https://jsonplaceholder.typicode.com/todos/1&#39;)
+      .then((response) =&gt; response.json())
+      .then((json) =&gt; {
+        var str = JSON.stringify(json, null, &#39;  &#39;)
+
+        // Format result
+        result.innerHTML = Prism.highlight(
+          str,
+          Prism.languages.javascript,
+          &#39;javascript&#39;
+        )
+
+        runMessage.className = &#39;&#39;
+      })
+  }
+&lt;/script&gt;
+&lt;/div&gt;
+
+&lt;footer class=&quot;container mx-auto max-w-4xl mt-four&quot;&gt;
+&lt;div class=&quot;mb-one&quot;&gt;
+&lt;a href=&quot;https://github.com/users/typicode/sponsorship&quot;&gt;
+&lt;strong&gt;You can sponsor this project (and others) on GitHub&lt;/strong&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class=&quot;mb-one&quot;&gt;
+Coded and maintained with ❤️ by
+&lt;a href=&quot;https://github.com/typicode&quot;&gt;typicode&lt;/a&gt; © 2024
+&lt;/div&gt;
+&lt;/footer&gt;
+&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref passed">6</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">63</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.7">00:53:58.203 [print] 
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;utf-8&quot; /&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1, shrink-to-fit=no&quot; /&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;/style.css&quot; /&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.9.0/prism-lucario.min.css&quot; /&gt;
+&lt;title&gt;JSONPlaceholder - Free Fake REST API&lt;/title&gt;
+
+&lt;script async src=&quot;https://www.googletagmanager.com/gtag/js?id=G-E3C3GCQVBN&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag(&#39;js&#39;, new Date())
+
+      gtag(&#39;config&#39;, &#39;G-E3C3GCQVBN&#39;)
+    &lt;/script&gt;
+&lt;script async src=&quot;https://media.ethicalads.io/media/client/ethicalads.min.js&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;div class=&quot;bg-blue-500 text-center py-2&quot;&gt;
+&lt;div class=&quot;container mx-auto&quot;&gt;
+&lt;a href=&quot;https://github.com/typicode/mistcss&quot; class=&quot;text-white&quot;&gt;Check my new project &lt;strong&gt;💧 MistCSS&lt;/strong&gt; write React components with 50% less code&lt;/a&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;header class=&quot;
+        container
+        mx-auto
+        max-w-4xl
+        flex flex-col
+        md:flex-row
+        justify-between
+        py-one
+        mb-three
+      &quot;&gt;
+&lt;h1&gt;
+&lt;a href=&quot;/&quot; class=&quot;font-bold no-underline&quot;&gt;JSONPlaceholder&lt;/a&gt;
+&lt;/h1&gt;
+&lt;nav&gt;
+&lt;ul class=&quot;flex&quot;&gt;
+&lt;li&gt;&lt;a href=&quot;/guide&quot; class=&quot;mr-4 no-underline&quot;&gt;Guide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://github.com/sponsors/typicode&quot; class=&quot;mr-4 no-underline&quot;&gt;Sponsor this project&lt;/a
+            &gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://blog.typicode.com&quot; class=&quot;mr-4 no-underline&quot;&gt;Blog&lt;/a
+            &gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://my-json-server.typicode.com&quot; class=&quot;no-underline&quot;&gt;My JSON Server&lt;/a
+            &gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/nav&gt;
+&lt;/header&gt;
+&lt;div&gt;
+
+&lt;section id=&quot;hero&quot; class=&quot;-mt-three py-20 mb-six -mx-2&quot;&gt;
+&lt;div class=&quot;container mx-auto max-w-4xl&quot;&gt;
+&lt;span class=&quot;text-6xl bold&quot;&gt;{JSON} Placeholder&lt;/span&gt;
+&lt;h1 class=&quot;mt-two text-lg&quot;&gt;
+Free fake and reliable API for testing and prototyping.
+&lt;/h1&gt;
+&lt;p class=&quot;mb-one text-lg&quot;&gt;
+Powered by
+&lt;a href=&quot;https://github.com/typicode/json-server&quot;&gt;JSON Server&lt;/a&gt;
++
+&lt;a href=&quot;https://github.com/typicode/lowdb&quot;&gt;LowDB&lt;/a&gt;.
+&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Serving ~3 billion requests each month&lt;/b&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+
+&lt;section class=&quot;container mx-auto max-w-4xl mb-six&quot;&gt;
+&lt;h2 class=&quot;text-2xl mb-one&quot;&gt;Sponsors&lt;/h2&gt;
+&lt;p class=&quot;mb-two&quot;&gt;
+JSONPlaceholder is supported by the following companies and
+&lt;a href=&quot;https://github.com/sponsors/typicode&quot;&gt;Sponsors&lt;/a&gt; on GitHub, check
+them out 💖
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&quot;https://mockend.com&quot; target=&quot;_blank&quot;&gt;
+&lt;img src=&quot;mockend.svg&quot; class=&quot;mb-two&quot; style=&quot;height: 100px&quot; /&gt;
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&quot;https://zuplo.link/json-server-web&quot; target=&quot;_blank&quot;&gt;
+&lt;img src=&quot;https://github.com/typicode/json-server/assets/5502029/928b7526-0fdf-46ae-80d9-27fa0ef5f430&quot; class=&quot;mb-two&quot; style=&quot;height: 100px&quot; /&gt;
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;p class=&quot;my-two&quot;&gt;
+&lt;a href=&quot;https://github.com/sponsors/typicode&quot;&gt;Your company logo here&lt;/a&gt;
+&lt;/p&gt;
+&lt;/section&gt;
+
+&lt;section class=&quot;container mx-auto max-w-4xl mb-four&quot;&gt;
+&lt;h2 class=&quot;text-2xl mb-one&quot;&gt;Try it&lt;/h2&gt;
+&lt;p&gt;Run this code here, in a console or from any site:&lt;/p&gt;
+&lt;pre&gt;&lt;code id=&quot;example&quot; class=&quot;language-javascript&quot;&gt;fetch(&#39;https://jsonplaceholder.typicode.com/todos/1&#39;)
+      .then(response =&gt; response.json())
+      .then(json =&gt; console.log(json))&lt;/code&gt;&lt;/pre&gt;
+&lt;button id=&quot;run-button&quot; class=&quot;
+      bg-black
+      hover:bg-gray-700
+      text-white
+      font-bold
+      py-quarter
+      my-quarter
+      px-4
+      rounded
+    &quot;&gt;
+Run script
+&lt;/button&gt;
+&lt;pre&gt;&lt;code id=&quot;result&quot; class=&quot;language-javascript&quot;&gt;{}&lt;/code&gt;&lt;/pre&gt;
+&lt;p id=&quot;run-message&quot; class=&quot;invisible&quot;&gt;
+Congrats! You&#39;ve made your first call to JSONPlaceholder. 😃 🎉
+&lt;/p&gt;
+&lt;div class=&quot;horizontal flat adaptive&quot; data-ea-publisher=&quot;jsonplaceholdertypicodecom&quot; data-ea-style=&quot;stickybox&quot; data-ea-keywords=&quot;javascript|typescript|mobile|react|vue|frontend|front-end|backend|back-end&quot;&gt;&lt;/div&gt;
+&lt;/section&gt;
+&lt;main class=&quot;container mx-auto max-w-4xl&quot;&gt;&lt;h2&gt;When to use&lt;/h2&gt;
+&lt;p&gt;JSONPlaceholder is a free online REST API that you can use &lt;strong&gt;whenever you need some fake data&lt;/strong&gt;. It can be in a README on GitHub, for a demo on CodeSandbox, in code examples on Stack Overflow, ...or simply to test things locally.&lt;/p&gt;
+&lt;h2&gt;Resources&lt;/h2&gt;
+&lt;p&gt;JSONPlaceholder comes with a set of 6 common resources:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&quot;/posts&quot;&gt;/posts&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;100 posts&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&quot;/comments&quot;&gt;/comments&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;500 comments&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&quot;/albums&quot;&gt;/albums&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;100 albums&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&quot;/photos&quot;&gt;/photos&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;5000 photos&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&quot;/todos&quot;&gt;/todos&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;200 todos&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&quot;/users&quot;&gt;/users&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;10 users&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: resources have relations. For example: posts have many comments, albums have many photos, ... see &lt;a href=&quot;/guide&quot;&gt;guide&lt;/a&gt; for the full list.&lt;/p&gt;
+&lt;h2&gt;Routes&lt;/h2&gt;
+&lt;p&gt;All HTTP methods are supported. You can use http or https for your requests.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;/posts&quot;&gt;/posts&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;/posts/1&quot;&gt;/posts/1&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;/posts/1/comments&quot;&gt;/posts/1/comments&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;/comments?postId=1&quot;&gt;/comments?postId=1&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;POST&lt;/td&gt;
+&lt;td&gt;/posts&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;PUT&lt;/td&gt;
+&lt;td&gt;/posts/1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;PATCH&lt;/td&gt;
+&lt;td&gt;/posts/1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;DELETE&lt;/td&gt;
+&lt;td&gt;/posts/1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: see &lt;a href=&quot;/guide&quot;&gt;guide&lt;/a&gt; for usage examples.&lt;/p&gt;
+&lt;h2&gt;Use your own data&lt;/h2&gt;
+&lt;p&gt;With our sponsor &lt;a href=&quot;https://mockend.com&quot;&gt;Mockend&lt;/a&gt; and a simple GitHub repo, you can have your own fake online REST server in seconds.&lt;/p&gt;
+&lt;/main&gt;
+&lt;script&gt;
+  // Use http or https based on location.protocol
+  var example = document.getElementById(&#39;example&#39;)
+  example.textContent = example.textContent.replace(&#39;http:&#39;, location.protocol)
+
+  // Highlight result element
+  var result = document.getElementById(&#39;result&#39;)
+
+  // Run example
+  var runButton = document.getElementById(&#39;run-button&#39;)
+  runButton.onclick = function () {
+    var root = location.protocol + &#39;//jsonplaceholder.typicode.com&#39;
+    var runMessage = document.getElementById(&#39;run-message&#39;)
+
+    fetch(&#39;https://jsonplaceholder.typicode.com/todos/1&#39;)
+      .then((response) =&gt; response.json())
+      .then((json) =&gt; {
+        var str = JSON.stringify(json, null, &#39;  &#39;)
+
+        // Format result
+        result.innerHTML = Prism.highlight(
+          str,
+          Prism.languages.javascript,
+          &#39;javascript&#39;
+        )
+
+        runMessage.className = &#39;&#39;
+      })
+  }
+&lt;/script&gt;
+&lt;/div&gt;
+
+&lt;footer class=&quot;container mx-auto max-w-4xl mt-four&quot;&gt;
+&lt;div class=&quot;mb-one&quot;&gt;
+&lt;a href=&quot;https://github.com/users/typicode/sponsorship&quot;&gt;
+&lt;strong&gt;You can sponsor this project (and others) on GitHub&lt;/strong&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class=&quot;mb-one&quot;&gt;
+Coded and maintained with ❤️ by
+&lt;a href=&quot;https://github.com/typicode&quot;&gt;typicode&lt;/a&gt; © 2024
+&lt;/div&gt;
+&lt;/footer&gt;
+&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

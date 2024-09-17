@@ -2,7 +2,7 @@ package com.example;
 
 import com.intuit.karate.junit5.Karate;
 
-public class ExampleTest {
+public class ExampleTests {
 
     @Karate.Test
     Karate testExample() {
